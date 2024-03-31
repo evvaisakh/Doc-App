@@ -16,7 +16,7 @@ function Header() {
       <Navbar expand='lg' className="bg-primary shadow">
         <Container>
           <Navbar.Brand>
-            <Link to={'/'} className='text-decoration-none fw-bold text-light'><i className="fa-brands fa-dochub fa-flip text-light"></i> <span className='text-warning pe-1'>Docu</span>Verse</Link>
+            <h5 className='fw-bold text-light user-select-none' ><i className="fa-brands fa-dochub fa-flip text-light"></i> <span className='text-warning pe-1'>Docu</span>Verse</h5>
           </Navbar.Brand>
         </Container>
         <div className="ms-auto">
