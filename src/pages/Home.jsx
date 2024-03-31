@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
     const [documents, setDocuments] = useState([])
     const [newDocumentTitle, setNewDocumentTitle] = useState("")
-    const [reload, setRelaod] = useState('')
+    const [reload, setReload] = useState('')
     const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate()
 
@@ -45,7 +45,7 @@ function Home() {
                 title: newDocumentTitle,
                 description: ""
             })
-            setRelaod(newDocumentTitle)
+            setReload(newDocumentTitle)
             toast.success(`Document ${newDocumentTitle} added successfully!!!`);
             handleClose()
         } catch (error) {
@@ -58,7 +58,7 @@ function Home() {
         try {
             const delDoc = doc(db, 'documents', id)
             await deleteDoc(delDoc)
-            setRelaod(id)
+            setReload(id)
             toast.success('Document deleted successfully!!!')
         } catch (error) {
             console.error('Error deleting document: ', error)
