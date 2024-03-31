@@ -83,10 +83,10 @@ function Home() {
             <Header />
             <div className='container'>
                 <div className='d-flex justify-content-center align-items-center flex-column mt-5'>
-                    <button className='btn btn-primary text-light' onClick={handleShow}>
+                    <Button variant="primary" onClick={handleShow}>
                         <i className="fa-solid fa-circle-plus me-2"></i>
                         Add New Document
-                    </button>
+                    </Button>
                 </div>
                 <div className="row mt-5">
                     {documents.map(item => (
@@ -118,9 +118,9 @@ function Home() {
                             <label htmlFor="floatingInput">Add Title</label>
                         </Form.Floating>
                         <div className='text-center'>
-                            <button className='btn btn-primary text-light' onClick={addDocument}>
+                            <Button variant="primary" onClick={addDocument}>
                                 Add
-                            </button>
+                            </Button>
                         </div>
                     </Modal.Body>
                 </Modal>
